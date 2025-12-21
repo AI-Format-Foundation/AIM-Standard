@@ -77,7 +77,6 @@ Portfolio and publishing workflows
 Required Manifest Fields:
 
 ```json
-Copy code
 "verification": {
   "trust_level": "creator-verified",
   "method": "email-and-signature",
@@ -109,7 +108,6 @@ Legal-adjacent use cases
 Required Manifest Fields:
 
 ```json
-Copy code
 "verification": {
   "trust_level": "platform-verified",
   "method": "platform-signal",
@@ -125,7 +123,6 @@ universal verification across all generators.
 All AIFX formats MAY include the following optional fields:
 
 ```json
-Copy code
 "verification_notes": "",
 "reviewed_by": "",
 "verification_version": "1.0"
