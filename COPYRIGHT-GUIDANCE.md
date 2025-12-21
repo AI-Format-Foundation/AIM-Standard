@@ -1,46 +1,72 @@
-# COPYRIGHT & HUMAN AUTHORSHIP GUIDANCE
+COPYRIGHT & HUMAN AUTHORSHIP GUIDANCE
 
-The AI Format Foundation recognizes that copyright protection for AI-assisted works requires meaningful human creative contribution. The standards in this repository (AIM, AIV, AII, AIP) support documentation of human authorship through structured metadata, provenance, and workflow history.
+AI First Exchange (AIFX)
 
-## 1. Human Authorship Requirements
+The AI First Exchange (AIFX) recognizes that copyright protection for AI-assisted works generally requires meaningful human creative contribution.
+The AIFX standards (AIFM, AIFV, AIFI, AIFP) support documentation of human authorship through structured metadata, declared provenance, and workflow records.
 
-A work may be eligible for copyright if a human:
-- Writes prompts or textual instructions
-- Directs style, tone, structure, or sequencing
-- Curates, selects, or rejects generated outputs
-- Edits, modifies, or enhances the output
-- Provides creative inputs that shape the final work
+This guidance is informational and does not constitute legal advice.
 
-Purely autonomous AI output without human creative influence is not copyrightable.
+1. Human Authorship Requirements
 
-## 2. How This Standard Supports Copyright Claims
+An AI-assisted work may be eligible for copyright if a human contributor:
 
-This format includes metadata to document:
-- Creator identity (name, handle, email)
-- Human-authored prompts and scripts
-- Editing steps and final decisions
-- Toolchain and model information
-- Timestamps and provenance
+Writes prompts, scripts, or textual instructions
 
-This information may be used to demonstrate human involvement in the creative process.
+Directs style, tone, structure, pacing, or sequencing
 
-## 3. Recommended Manifest Fields for Legal Compliance
+Curates, selects, or rejects generated outputs
 
-Creators may include these optional fields:
+Edits, modifies, refines, or enhances AI-generated material
 
-"human_authorship_statement": "I affirm that I contributed creative authorship...",
-"human_signature": "Name or digital signature hash",
+Makes expressive creative decisions that shape the final work
+
+Purely autonomous AI output, without meaningful human creative involvement, is generally not eligible for copyright protection.
+
+2. How AIFX Standards Support Authorship Documentation
+
+AIFX formats support documentation of human involvement by enabling inclusion of:
+
+Creator identity (name, handle, optional contact information)
+
+Human-authored prompts, scripts, or notes
+
+Editing steps and creative decisions
+
+Toolchain and model references
+
+Creation timestamps and declared provenance
+
+This metadata may assist creators, platforms, or rights holders in demonstrating the presence of human creative contribution.
+
+3. Recommended Manifest Fields for Authorship Documentation
+
+Creators MAY include the following optional fields in manifest.json:
+```json
+"human_authorship_statement": "I affirm that I contributed meaningful creative authorship...",
+"human_signature": "Typed name or signature hash",
 "creator_email": "email@example.com",
-"editorial_notes": "Summary of human creative decisions."
+"editorial_notes": "Summary of human creative decisions"
+```
 
-## 4. Ownership
+These fields are self-declared, optional, and documentation-oriented.
 
-Copyright belongs to the human author(s) who contributed creative expression.  
-If the work contains only machine-generated expression, it may not qualify for protection.
+4. Ownership
 
-## 5. Licensing
+Copyright ownership belongs to the human author(s) who contributed protectable creative expression.
+Works consisting solely of unedited or uncurated machine-generated output may not qualify for copyright protection.
 
-Creators may include licensing files in `legal/license.txt` and `legal/terms.txt`.  
-All distribution must follow applicable legal requirements.
+AIFX does not determine ownership or eligibility.
 
+5. Licensing
 
+Creators may include licensing information in legal/license.txt, legal/terms.txt, or equivalent files within an AIFX container.
+All distribution and reuse must comply with applicable laws, licenses, and platform policies.
+
+Notes
+
+AIFX does not certify copyright eligibility
+
+AIFX does not verify authorship claims
+
+Legal interpretation is determined by applicable law and downstream authorities
